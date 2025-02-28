@@ -1,0 +1,38 @@
+.devs-main {
+    display: flex; /* Usando flexbox para organizar os cartões lado a lado */
+    justify-content: space-around; /* Espaço igual entre os cartões */
+    padding: 2rem;
+    flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha em telas menores */
+}
+
+.dev-card {
+    width: 30%; /* Cada cartão ocupa 30% da largura, com espaço para margens */
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dev-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.dev-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.dev-card p {
+    margin-bottom: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .dev-card {
+        width: 100%; /* Em telas menores, cada cartão ocupa a largura total */
+    }
+}
