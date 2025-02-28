@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituição Barbie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://imgur.com/GsKPGWe.png" alt="Logo da Página">
+                <span class="logo-text">Instituição Barbie</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#">Desenvolvedores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form id="formCadastro">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="profissao">Profissão</label>
+            <input type="text" id="profissao" name="profissao" required>
+
+            <button type="submit">Gravar</button>
+        </form>
+
+        <div id="cadastro-mensagem" style="display: none; text-align: center; margin-bottom: 20px;">
+            <p>Parabéns! Você agora faz parte da Instituição Barbie.</p>
+        </div>
+
+        <table>
+            <caption>Lista de Cândidatos</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Profissão</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaPersonagens">
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; IFRN Campus Santa Cruz</p>
+        <p>Trabalho de Autoria Web</p>
+        <p>Professor:</p>
+        <p>Marcelo Figueiredo Barbosa Júnior.</p>
+        <p>Componentes:</p>
+        <p>Carlos Emanuel de Souza Bernardino</p>
+        <p>Kaylane de Lima Pinheiro</p>
+        <p>Raylla Havylla dos Santos Cândido.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
